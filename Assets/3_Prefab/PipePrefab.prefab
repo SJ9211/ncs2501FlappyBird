@@ -49,6 +49,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.65
+  upPipe: {fileID: 6577262392254386961}
+  downPipe: {fileID: 6577262392231177501}
 --- !u!61 &5699767046990750442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -88,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreValue: 1
+  acPoint: {fileID: 8300000, guid: eb322df75e49ffa4f91e1246ffc722c3, type: 3}
 --- !u!1 &6577262392231177499
 GameObject:
   m_ObjectHideFlags: 0
