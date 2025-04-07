@@ -1080,6 +1080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   background: {fileID: 620940275}
   floorAnim: {fileID: 1729865605}
+  birdAnim: {fileID: 1057223614}
   acReady: {fileID: 8300000, guid: 571ce81f54da5c64d85a26f12ddd034b, type: 3}
   acHit: {fileID: 8300000, guid: 005ddc26eaa778e43b5d3bd320fcd71a, type: 3}
   restartButton: {fileID: 907839879}

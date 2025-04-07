@@ -6,6 +6,7 @@ public class BirdControl : MonoBehaviour
 {
     [SerializeField] float velocity = 1.5f;
     [SerializeField] float rotateSpeed = 10f;
+    //[SerializeField] Animator FlapAnim;
     [SerializeField] AudioClip acWing;
     [SerializeField] AudioClip acDie;
     Rigidbody2D rb;
@@ -60,6 +61,7 @@ public class BirdControl : MonoBehaviour
         gmi.GameOver();
         // 새의 Flap 애니메이션을 멈춤
         GetComponent<Animator>().enabled = false;
+        //FlapAnim.enabled = false;
         // 새의 y좌표에 따라 소리 재생
         if (transform.position.y > -0.25f)
         {

@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] SpriteRenderer background;
     [SerializeField] Animator floorAnim;
+    [SerializeField] Animator birdAnim;
     [SerializeField] AudioClip acReady;
     [SerializeField] AudioClip acHit;
     [SerializeField] GameObject restartButton;
@@ -78,11 +79,16 @@ public class GameManager : MonoBehaviour
         ChangeState(State.READY);
         // Ready Sound
         PlayAudio(acReady);
+        // 새를 뒤로 움직인다.
+        birdAnim.SetTrigger("Ready");
+
     }
 
     public void GamePlay()
     {
         ChangeState(State.PLAY);
+        // 새의 Animator 는 끈다
+        birdAnim.enabled = false;
     }
 
     public void GameOver()
